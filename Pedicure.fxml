@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.ServiceController">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" styleClass="primary-color" stylesheets="@CSS/styles.css" BorderPane.alignment="CENTER">
+            <children>
+            <Button fx:id="mainPage" onAction="#mainPage" mnemonicParsing="false" prefHeight="63.0" prefWidth="168.0" style="-fx-background-color: #cccfbc;" text="Thyme">
+               <font>
+                  <Font name="Edwardian Script ITC" size="20.0" />
+               </font>
+            </Button>
+                <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="31.0" prefWidth="0.0">
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                </Separator>
+                <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="40.0" prefWidth="302.0" spacing="20.0" styleClass="round-layout" stylesheets="@CSS/styles.css">
+                    <children>
+                        <TextField prefHeight="25.0" prefWidth="106.0" promptText="Search" styleClass="transparent" stylesheets="@CSS/styles.css">
+                            <padding>
+                                <Insets top="10.0" />
+                            </padding>
+                        </TextField>
+                        <ImageView fitHeight="20.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@search.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="makeApptPage" onAction="#makeApptPage" layoutX="45.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="168.0" text="Make an Appointment" />
+               </children></Pane>
+                <HBox prefHeight="100.0" prefWidth="200.0" />
+            </children>
+        </HBox>
+    </top>
+    <left>
+        <VBox prefHeight="420.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="423.0" prefWidth="200.0" styleClass="green-background" stylesheets="@CSS/styles.css">
+                    <children>
+                        <Label prefHeight="41.0" prefWidth="93.0" text="Services">
+                            <font>
+                                <Font name="Dubai Light" size="14.0" />
+                            </font>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="22.0" prefWidth="200.0" styleClass="mouse-moved" stylesheets="@CSS/styles.css">
+                            <children>
+                                <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@waxing.png" />
+                                    </image>
+                                </ImageView>
+                        <Button fx:id="getWaxPage" onAction="#getWaxPage" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Waxing" />
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" top="15.0" />
+                            </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="mouse-moved" stylesheets="@CSS/styles.css">
+                            <children>
+                                <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@manicure.png" />
+                                    </image>
+                                </ImageView>
+                        <Button fx:id="getManiPage" onAction="#getManiPage" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Manicure" />
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" top="15.0" />
+                            </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="mouse-moved" stylesheets="@CSS/styles.css">
+                            <children>
+                                <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@pediccure.png" />
+                                    </image>
+                                </ImageView>
+                        <Button fx:id="getPediPage" onAction="#getPediPage" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Pedicure" />
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" top="15.0" />
+                            </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="mouse-moved" stylesheets="@CSS/styles.css">
+                            <children>
+                                <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@massage.png" />
+                                    </image>
+                                </ImageView>
+                        <Button fx:id="getMassagePage" onAction="#getMassagePage" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Massage" />
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" top="15.0" />
+                            </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="mouse-moved" stylesheets="@CSS/styles.css">
+                            <children>
+                                <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@facial.png" />
+                                    </image>
+                                </ImageView>
+                        <Button fx:id="getFacialPage" onAction="#getFacialPage" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Facial" />
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" top="15.0" />
+                            </padding>
+                        </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="mouse-moved" stylesheets="@CSS/styles.css">
+                     <children>
+                        <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@tan.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="getTanPage" onAction="#getTanPage" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Tanning" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" top="15.0" />
+                     </padding>
+                  </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </left>
+   <right>
+      <ScrollBar orientation="VERTICAL" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <VBox prefHeight="311.0" prefWidth="489.0" styleClass="secondary-color" stylesheets="@CSS/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="31.0" prefWidth="489.0" text="Pedicure">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+               </padding>
+            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="39.0" prefWidth="489.0">
+                     <children>
+                        <Label alignment="TOP_CENTER" prefHeight="59.0" prefWidth="197.0" text="Person in charge">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="59.0" prefWidth="35.0" />
+                        <TextField prefHeight="27.0" prefWidth="203.0" stylesheets="@CSS/styles.css" text="Mark" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="79.0" prefWidth="467.0">
+                     <children>
+                        <Label alignment="TOP_CENTER" prefHeight="59.0" prefWidth="219.0" text="Pedicure options -&gt;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+                           </padding>
+                        </Label>
+                        <Pane prefHeight="100.0" prefWidth="112.0">
+                           <children>
+                              <VBox layoutX="6.0" layoutY="4.0" prefHeight="68.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="regular">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label prefHeight="27.0" prefWidth="35.0" text="gel">
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pedicure1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label prefHeight="224.0" prefWidth="489.0" text="Details: A pedicure is a comprehensive treatment of your feet and is suitable for both men and women. It involves cutting, trimming and shaping your toenails, tending to your cuticles, exfoliating, hydrating and massaging your feet, and, if desired, painting your toenails." wrapText="true">
+               <padding>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
